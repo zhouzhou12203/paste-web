@@ -8,7 +8,7 @@ $dataFile = __DIR__ . '/12203data.json';
 
 // 密码验证（复用删除密码）
 $password = $_POST['password'] ?? '';
-if ($password !== '12203') {
+if ($password !== 'zhouzhou12203') {
     http_response_code(401);
     exit('错误：管理员密码错误');
 }

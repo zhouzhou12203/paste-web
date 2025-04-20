@@ -7,7 +7,7 @@ $dataFile = __DIR__ . '/12203data.json';
 
 
 // 密码验证（示例密码：12203）
-define('ADMIN_PWD', password_hash('12203', PASSWORD_DEFAULT));
+define('ADMIN_PWD', password_hash('zhouzhou12203', PASSWORD_DEFAULT));
 if (!password_verify($_POST['password'], ADMIN_PWD)) {
     http_response_code(401);
     exit('错误：管理员密码错误');
